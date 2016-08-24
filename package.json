@@ -1,6 +1,6 @@
 {
   "name": "refluxed",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Connecting React Components with Reflux Stores in a clean way",
   "license": "MIT",
   "repository": "elementar/refluxed",
