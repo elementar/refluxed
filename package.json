@@ -12,8 +12,8 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "build": "babel module --out-dir ./",
-    "develop": "nodangel --ignore node_modules --watch __tests__ --watch module --exec 'npm run test'",
+    "build": "babel src -o ./index.js",
+    "develop": "nodangel --ignore node_modules --watch __tests__ --watch src --exec 'npm run test'",
     "test": "babel-node node_modules/isparta/bin/isparta cover --include-all-sources --report lcov --report html node_modules/mocha/bin/_mocha -- --require babel-core/register",
     "codecov": "npm run test && codecov",
     "patch-release": "npm run build && npm version patch && npm publish && git push --follow-tags",
