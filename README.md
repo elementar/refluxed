@@ -1,6 +1,6 @@
 # refluxed
 
-> Connecting React Components with [Reflux][r] Stores in a clean way
+> Connecting React Components with [Reflux][reflux] Stores in a clean way
 
 ## Installation
 
@@ -27,7 +27,7 @@ function UserList({ users, header }) {
 ```
 
 Then, before using your component on your app, you use the `Refluxed` method to
-wrap your component into another (the [High-Order Component][h]), which will then
+wrap your component into another (the [High-Order Component][hoc]), which will then
 listen to the stores you need and pass on their data as `props`:
 
 ```jsx
@@ -46,9 +46,15 @@ function MyApp() {
 }
 ```
 
+## Inspiration
+
+This project is inspired by the great [reflux-hoc][reflux-hoc] from [Christoph Hermann][ch].
+
 ## License
 
 MIT © [Elementar Sistemas](http://elementarsistemas.com.br)
 
-[r]: https://github.com/reflux/refluxjs
-[h]: https://medium.com/@franleplant/react-higher-order-components-in-depth-cf9032ee6c3e#.7ld736rgp
+[reflux]: https://github.com/reflux/refluxjs
+[hoc]: https://medium.com/@franleplant/react-higher-order-components-in-depth-cf9032ee6c3e#.7ld736rgp
+[reflux-hoc]: https://github.com/stoeffel/reflux-hoc
+[ch]: http://stoeffel.github.io/
